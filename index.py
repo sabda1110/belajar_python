@@ -1,37 +1,51 @@
-# Belajar Tipe Data
+# Belajar Cesting ,Cesting Merupakan mengubah tipe data
 
-# tipe data Int
-nilai_int = 10;
-print(type(nilai_int))
-print("Nilai dari Integer = ",nilai_int)
+print("============INTEGER=================")
 
-# tipe data Float 
-nilai_float = 1.15;
-print(type(nilai_float))
-print("Nilai dari Float = ",nilai_float)
+data_int = 10;
+print("data : ",data_int,", Type = ",type(data_int))
 
-# tipe data String
-nilai_string = "Saya Belajar dengan Serius"
-print(type(nilai_string))
-print("Nilai dari String = ",nilai_string)
+data_float=float(data_int)
+data_string=str(data_int)
+data_bool=bool(data_int) #benilai FALSE jika nilai tersebut 0 dan selai 0 maka TRUE
+print("data : ",data_int,", Type = ",type(data_float))
+print("data : ",data_int,", Type = ",type(data_string))
+print("data : ",data_int,", Type = ",type(data_bool))
 
-#tipe data Boolean
-nilai_boolean =True;
-print(type(nilai_boolean))
-print("Nilai dari Boolean = ",nilai_boolean)
+print("============FLOAT=================")
 
-#Tipe data Kompleks
-nilai_complex = complex(5,6)
-print(type(nilai_complex))
-print("Nilai dari Boolean = ",nilai_complex)
+data_float = 10.9;
+print("data : ",data_float,", Type = ",type(data_float))
 
-#menggambil tipe data dari bahasa C
-from ctypes import c_double
-data_c = c_double(20.5)
-print(type(data_c))
-print("Nilai dari Boolean = ",data_c)
+data_int=int(data_float)
+data_string=str(data_float)
+data_bool=bool(data_float)
+print("data : ",data_int,", Type = ",type(data_int))
+print("data : ",data_string,", Type = ",type(data_string))
+print("data : ",data_bool,", Type = ",type(data_bool))
 
 
+print("============BOOLEAN=================")
+
+data_bool = True;
+print("data : ",data_bool,", Type = ",type(data_bool))
+
+data_int=int(data_bool)
+data_string=str(data_bool)
+data_float=float(data_bool)
+print("data : ",data_int,", Type = ",type(data_int))
+print("data : ",data_string,", Type = ",type(data_string))
+print("data : ",data_float,", Type = ",type(data_float))
 
 
+print("============STRING=================")
 
+data_string = "10";
+print("data : ",data_string,", Type = ",type(data_string))
+
+data_int=int(data_string) #string harus angka
+data_bool=bool(data_string) #string harus angka
+data_float=float(data_string) #nilai string bila terisi bernilai true dan bila tak terisi maka false
+print("data : ",data_int,", Type = ",type(data_int))
+print("data : ",data_bool,", Type = ",type(data_bool))
+print("data : ",data_float,", Type = ",type(data_float))
