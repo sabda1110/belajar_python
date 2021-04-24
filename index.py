@@ -1,17 +1,36 @@
-# Belajar mengambil data dari user
+# Latihan Suhu 
 
-#string
-data = input("Masukan Data Anda : ")
-print("Nilai : ",data," , Type = ",type(data))
 
-#int
-data_int = int(input("Masukan Data Anda : "))
-print("Nilai : ",data_int," , Type = ",type(data_int))
+#Fahrenheit
+print("============Fahrenheit=============")
 
-#Float
-data_float = float(input("Masukan Data Anda : "))
-print("Nilai : ",data_float," , Type = ",type(data_float))
+fahrenheit = float(input("Masukan Suhu dalam Fahrenheit : "))
 
-#boolean
-data_bool = bool(int(input("Masukan Data Bolean : ")))
-print("Nilai : ",data_bool," , Type = ",type(data_bool))
+#Fahrenheit ke Celcius
+celcius = (5/9)*(fahrenheit-32)
+#Fahrenheit ke reamur
+reamur = (4/9)*(fahrenheit-32)
+#Fahrenheit ke Kelvin
+kelvin = ((5/9)*(fahrenheit-32))+273
+
+print("Suhu Dalam Celcius : ",celcius," Celcius")
+print("Suhu Dalam reamur : ",reamur," Reamur")
+print("Suhu Dalam Kelvin : ",kelvin," kelvin")
+
+
+#Kelvin
+print("============Kelvin=============")
+
+kelvin = float(input("Masukan Suhu dalam Kelvin : "))
+
+#Kelvin ke Celcius
+celcius = kelvin-273
+#Kelvin ke reamur
+reamur = (4/5)*(kelvin-273)
+#Kelvin ke fahrenheit
+fahrenheit = ((9/5)*(kelvin-273))+32
+
+print("Suhu Dalam Celcius : ",celcius," Celcius")
+print("Suhu Dalam reamur : ",reamur," Reamur")
+print("Suhu Dalam Fahrenheit : ",fahrenheit," Fahrenheit")
+
